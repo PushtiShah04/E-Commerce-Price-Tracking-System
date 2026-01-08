@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  price-tracker:
+    build: .
+    container_name: ecom-price-tracker
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./app:/app
+    restart: always
+
